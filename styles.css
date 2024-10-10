@@ -1,0 +1,81 @@
+.fa-cloud-rain {
+    background-image: url('/images/pluvieux.jpg');
+}
+
+.fa-cloud {
+    background-image: url('/images/nuageux.jpg');
+}
+
+.fa-sun {
+    background-image: url('/images/ensoleillé.jpg');
+}
+
+.fa-snowflake {
+    background-image: url('/images/neige.jpg');
+}
+
+.fa-cloud-fog {
+    background-image: url('/images/brouillard.jpg');
+}
+
+.fa-cloud-drizzle {
+    background-image: url('/images/pluie%20fine.jpg'); /* Notez l'utilisation de %20 pour l'espace */
+}
+.fa-solid {
+    font-size: 5em;
+    width: 100%;
+    text-align: center;
+    background: transparent; /* Assurez-vous que l'icône a un fond transparent */
+}
+
+
+body {
+    font-family: 'Trebuchet MS';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    color: #fff;
+    height: 100vh;
+    overflow: hidden;
+    line-height: 9em;
+    background-position: center;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 4em;
+    text-align: center;
+    position: relative;
+}
+
+.fa-solid {
+    font-size: 5em;
+    width: 100%;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    text-align: center;
+}
+
+#tooltip {
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    color: #fff;
+    background-color: #222;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 15px;
+    text-align: center;
+    line-height: normal;
+    transition: opacity .3s, top .5s;
+}
+
+h1:hover #tooltip {
+    top: -50px;
+    opacity: 1;
+}
