@@ -14,7 +14,7 @@ function capitalize(str) {
 async function main(withIP = true) {
     let ip;
     let ville;
-    const apiKey = 'e316a0bcf9d7bc4ddd0e8818da8abd71'; // clé API ipstack
+    const apiKey ="  // clé API ipstack";
 
     if (withIP) {
         // 1. Récupérer l'adresse IP du PC qui ouvre la page
@@ -41,7 +41,7 @@ async function main(withIP = true) {
     }
 
     // 3. Récupérer les infos météo grâce à la ville
-    const weatherApiKey = 'a0a39a26595b34dbc9b49b095a692486'; // clé API OpenWeatherMap
+    const weatherApiKey =  "// clé API OpenWeatherMap";
 
     try {
         let response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${ville}&appid=${weatherApiKey}&units=metric`);
